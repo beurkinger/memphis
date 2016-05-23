@@ -40,12 +40,9 @@ if (isset($_GET['id']) && (! empty($article = $db->getArticle(0, (int)$_GET['id'
     echo '
             <article>
                 <h1>'. $article[0]['title']. '</h1>
+                <time>'. date('d/m/Y',$article[0]['date']).' ~ <a href="index.php?c='. $article[0]['cat_id']. '">'. $db->getCategory($article[0]['cat_id'])[0]['name']. '</a></time>
                 <p>'. nl2br($article[0]['body']). '</p>
-            </article>
-            <aside>
-               <time>'. date('Y-m-d',$article[0]['date']).'</time>
-               <div><a href="index.php?c='. $article[0]['cat_id']. '">'. $db->getCategory($article[0]['cat_id'])[0]['name']. '</a></div>
-            </aside>';
+            </article>';
     
     //On récupère un tableau contenant les commentaires liés à l'article,
     //et on l'affiche s'il n'est pas vide.

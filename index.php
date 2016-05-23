@@ -10,7 +10,7 @@ require('./includes/head.php');
 if (isset($_GET['c']))
 {
     $currentCategory = (int)$_GET['c'];
-    echo '<h3>Articles de la catégorie <br/>"'.$db->getCategory($currentCategory)[0]['name'].'"</h3>';
+    echo '<h4>Articles de la catégorie <br/>"'.$db->getCategory($currentCategory)[0]['name'].'"</h4>';
 }
 else
 {
@@ -41,11 +41,12 @@ if (! empty($articlesList))
         echo '
             <article>
                 <h1>'. $article['title']. '</h1>
+                <time>'. date('d/m/Y',$article['date']).' ~ <a href="index.php?c='. $article['cat_id']. '">'. $db->getCategory($article['cat_id'])[0]['name']. '</a></time>
                 <p>'. nl2br($article['body']). '</p>
             </article>
             <aside>
-               <time>'. date('Y-m-d',$article['date']).'</time>
-               <div><a href=article.php?id='.$article['id'].'>Commenter</a></div>
+                <div class="pull-right"><a href=article.php?id='.$article['id'].'>Commenter</a></div>
+                <div class="clearfix"></div>
             </aside>';
     }
     //On calcule un entier qui correspond au nombre total de pages,

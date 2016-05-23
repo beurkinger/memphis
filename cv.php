@@ -7,7 +7,7 @@ require('./includes/head.php');
 <h1>Thibault Goehringer</h1>
 
 <div class="pages">
-    26 ans, célibataire
+    28 ans, célibataire
     </br>32 rue Dareau, 75014 Paris
     </br>06 31 79 19 00 / tgoehringer@gmail.com
 </div>
@@ -15,7 +15,15 @@ require('./includes/head.php');
 <h2 id="experience">Expériences professionnelles</h2>
 
 <h3>
-    2011- aujourd’hui : Modzik, Paris
+    2014- aujourd’hui : Or Normes, Paris
+</h3>
+<p>
+    Développeur web back & front. Réalisation en Symfony2 / AngularJS d'une application web destinée
+    aux agences de voyage. Participation à la gestion du projet.
+</p>
+
+<h3>
+    2014- aujourd’hui : Modzik, Paris
 </h3>
 <p>
     Journaliste pigiste. Mise au point d’articles, portraits et interviews. Veille de l’actualité musicale indépendante.
@@ -28,22 +36,14 @@ require('./includes/head.php');
     Journaliste pigiste. Responsable de la rubrique bandes dessinées. Prise en charge des relations avec les éditeurs, chronique d’albums.
 </p>
 
-<h3>
-    2011 : Campus Mag, Montreuil
-</h3>
-<p>
-    Stage de huit mois. Réalisation d’articles, dossiers et interviews consacrés à l’actualité culturelle ou à l’orientation étudiante.
-</p>
-
-<h3>
-    2010 : Agence de presse Rue des Pommiers, Pantin
-</h3>
-<p>
-    Stage de quatre mois. Conception d’articles et de dossiers pour la presse généraliste nationale. Rédaction d’ouvrages pour les éditions Atlas.
-</p>
-
 <h2 id ="formation">Formation universitaire</h2>
 
+<h3>
+    2014-2016 : IPSSI, Paris
+</h3>
+<p>
+    Mastère en développement web.
+</p>
 <h3>
     2012-2013 :Université Paris III Sorbonne Nouvelle, Paris
 </h3>

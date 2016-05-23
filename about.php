@@ -7,6 +7,15 @@ require('./includes/head.php');
 <article>
 <h1>Bonjour, </br>je m'appelle Thibault Goehringer</h1>
 <p>
+    Note : ce blog et le texte qui suit ont été réalisés en 2014. J'ai depuis
+    effectué une formation de deux ans en développement web au sein de l'école IPSSI
+    qui m'a davantage familiarisé avec le PHP et le Javascript (et notamment avec les
+    frameworks qui y sont associés).
+</p>
+<p>
+    ~
+</p>
+<p>
     Après des études de journalisme et quelques années de pratique professionnelle, j'ai
     choisi de me réorienter vers le développement web.
     La programmation est pour moi une source d'enthousiasme qui remonte au collège, lorsque
