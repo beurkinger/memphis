@@ -38,6 +38,7 @@
                  <h1>Projets</h1>
                 <ul>
                         <li><a href="./Yahoo/">Yahoo RSS Reader</a></li>
+                        <li><a href="./windows96/">Windows 96 (W.I.P.)</a></li>
                 </ul>
         </nav>
     
