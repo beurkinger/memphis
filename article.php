@@ -8,7 +8,7 @@ function printForm($articleId, $author, $body, $website, $mail)
 {
     echo '
     <h2 id="comment">Commenter cet article</h2>
-    <form action="Article.php?id='.$articleId .'#comment" method="post">
+    <form action="article.php?id='.$articleId .'#comment" method="post">
             <input type="hidden" name="newComment" value="newComment"/>
             <input type="hidden" name="articleId" value="'.$articleId.'"/>
             <p>
@@ -76,7 +76,7 @@ if (isset($_GET['id']) && (! empty($article = $db->getArticle(0, (int)$_GET['id'
             $db->newComment($articleId,$author,$body,$website, $mail);
             echo '
                 <h2 id="comment">Commentaire enregistré :-)</H2>
-                <p>Cliquez <a href="Article.php?id='.$articleId .'">içi</a> pour l\'afficher.</p>';
+                <p>Cliquez <a href="article.php?id='.$articleId .'">içi</a> pour l\'afficher.</p>';
         }
         //Sinon, on réaffiche le formulaire avec les champs déjà complétés.
         else
