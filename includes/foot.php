@@ -1,5 +1,5 @@
-    </div>    
-    
+    </div>
+
         <nav id="menu">
 
                 <?php
@@ -13,7 +13,7 @@
                         foreach ($categoriesList as $category)
                         {
                                 echo '
-                                <li><a href="index.php?c='. $category['id']. '">'. $category['name']. '</a></li>';  
+                                <li><a href="index.php?c='. $category['id']. '">'. $category['name']. '</a></li>';
                         }
                         echo '
                         </ul>';
@@ -33,15 +33,15 @@
                 <ul>
                         <li><a href="mailto:tgoehringer@gmail.com">Mail</a></li>
                         <li><a href="http://www.colourlovers.com/lover/beurkinger">Colourlovers</a></li>
-                        <li><a href="https://github.com/beurkinger">Github</a></li> 
+                        <li><a href="https://github.com/beurkinger">Github</a></li>
                 </ul>
                  <h1>Projets</h1>
                 <ul>
-                        <li><a href="./Yahoo/">Yahoo RSS Reader</a></li>
-                        <li><a href="./windows96/">Windows 96 (W.I.P.)</a></li>
+                        <li><a href="/Yahoo/">Yahoo RSS Reader</a></li>
+                        <li><a href="/windows96/">Windows 96 (W.I.P.)</a></li>
                 </ul>
         </nav>
-    
+
 </div>
 
 </div>
