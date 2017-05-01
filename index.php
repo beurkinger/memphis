@@ -45,8 +45,7 @@ if (! empty($articlesList))
                 <p>'. nl2br($article['body']). '</p>
             </article>
             <aside>
-                <div class="pull-right"><a href=article.php?id='.$article['id'].'>Commenter</a></div>
-                <div class="clearfix"></div>
+                <a href=article.php?id='.$article['id'].'>Commenter</a>
             </aside>';
     }
     //On calcule un entier qui correspond au nombre total de pages,
@@ -54,7 +53,7 @@ if (! empty($articlesList))
     //Si ce nombre total de pages est supérieur à 1, on génère les liens vers les autres pages.
     if (($numberOfPages = ((int)$db->countArticles($currentCategory)/ARTICLESPERPAGE))>1)
     {
-        echo'<div class ="pages">';       
+        echo'<div class ="pages">';
         for ($i=0; $i<$numberOfPages; $i++)
         {
             if ($i === $currentPage)
@@ -63,11 +62,11 @@ if (! empty($articlesList))
             }
             else
             {
-                echo '<a href="?p='. $i. ($currentCategory !== 0 ? '&c='. $currentCategory : ''). '">'. $i. '</a> '; 
-        
+                echo '<a href="?p='. $i. ($currentCategory !== 0 ? '&c='. $currentCategory : ''). '">'. $i. '</a> ';
+
             }
         }
-        echo'</div>';       
+        echo'</div>';
     }
 }
 else

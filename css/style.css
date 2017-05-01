@@ -11,7 +11,7 @@
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
-    word-wrap : break-word;  
+    word-wrap : break-word;
 }
 
 body
@@ -23,7 +23,7 @@ body
 
 a
 {
-    text-decoration : none;    
+    text-decoration : none;
 }
 
 li
@@ -48,7 +48,7 @@ li
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    height: 120px;
+    height: 140px;
 }
 
 #triangle
@@ -75,10 +75,10 @@ li
     height: 200px;
     background: #FFFF85;
     -o-transform:rotate(-70deg);
-    -ms-transform:rotate(-70deg); 
+    -ms-transform:rotate(-70deg);
     -webkit-transform:rotate(-70deg);
     transform:rotate(-70deg);
-   
+
 }
 
 #rectangleshadow
@@ -114,7 +114,7 @@ li
     line-height: 60px;
     padding: 0 0 0 100px;
     font-size: 50px;
-    font-family: Georgia, Times New Roman ;
+    font-family: Georgia, "Times New Roman" ;
     font-style: oblique;
     color: #3b4747;
 }
@@ -211,7 +211,7 @@ li
     border-top-right-radius: 0px;
     font-family: Arial, Helvetica, Verdana, sans-serif;
     vertical-align: top;
-    padding: 0 0 20px 0;
+    padding: 0 0 75px 0;
 }
 
 #main h1
@@ -219,11 +219,14 @@ li
     padding: 20px 40px 10px 40px;
     margin: 30px 0 10px 0;
     color :  #01cebf;
-    border-top: 1px solid #e3e7e6;
     font-size: 32px;
 }
 
-#main article:first-child h1
+#main article h1 {
+  border-top: 1px solid #e3e7e6;
+}
+
+#main article:first-of-type h1
 {
     border-top: 0px ;
     margin-top: 0px;
@@ -240,8 +243,8 @@ li
     padding: 20px 40px 10px 40px;
     margin: 30px 0 10px 0;
     color : #01cebf;
-    font-family: Georgia, Times New Roman ;
-    font-style: oblique;
+    font-family: Georgia, "Times New Roman" ;
+    /*font-style: oblique;*/
     font-size: 24px;
     border-top: 1px solid #e3e7e6;
 }
@@ -251,8 +254,8 @@ li
     padding: 10px 40px 10px 40px;
     margin: 5px 0 5px 0;
     color: #FFB685;
-    font-family: Georgia, Times New Roman;
-    font-style: oblique;
+    font-family: Georgia, "Times New Roman";
+    /*font-style: oblique;*/
     font-size: 24px;
 }
 
@@ -265,17 +268,18 @@ li
 #main article time
 {
     padding: 10px 40px;
-    font-family: Georgia, Times New Roman;
+    font-family: Georgia, "Times New Roman";
     font-size: 20px;
     color: #758C8C;
     /*font-weight: bold;*/
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 #main article time a
 {
     color: #758C8C;
     font-weight: normal;
+    text-decoration: underline
 }
 
 #main article time a:hover
@@ -294,17 +298,17 @@ li
     padding: 10px 40px 10px 40px;
     margin: 5px 0 5px 0;
     color: #FFB685;
-    font-family: Georgia, Times New Roman ;
-    font-style: oblique;
+    font-family: Georgia, "Times New Roman" ;
+    /*font-style: oblique;*/
     font-size: 16px;
 }
 
 #main p
 {
-    padding: 10px 40px 10px 40px;
+    padding: 22px 40px 10px 40px;
     margin: 5px 0 5px 0;
     color : #000000;
-    text-align:justify;
+    /*text-align:justify;*/
     font-size: 16px;
     line-height:22px;
 }
@@ -326,10 +330,11 @@ li
     margin: 30px 40px 20px 40px;
     padding: 10px 20px;
     border: 1px solid #e3e7e6;
-    font-family: Georgia, Times New Roman;
+    font-family: Georgia, "Times New Roman";
     font-style: oblique;
     color: #758C8C;
     font-size: 16px;
+    text-align: center;
 }
 
 #main aside .pull-left
@@ -347,13 +352,13 @@ li
     text-align: right;
 }
 
-#main aside div a
+#main aside a
 {
     color: #758C8C;
     font-weight: normal;
 }
 
-#main aside div a:hover
+#main aside a:hover
 {
     color: #01cebf;
 }
@@ -484,7 +489,7 @@ opacity: 0;
     text-align:justify;
     font-size: 16px;
     line-height:22px;
-    font-family: Georgia, Times New Roman;
+    font-family: Georgia, "Times New Roman";
     font-style: oblique;
     color: #758C8C;
     font-size: 16px;
@@ -504,7 +509,7 @@ opacity: 0;
     padding: 30px;
     text-align: center;
     font-size: 16px;
-    font-family: Georgia, Times New Roman;
+    font-family: Georgia, "Times New Roman";
 }
 
 .clearfix
